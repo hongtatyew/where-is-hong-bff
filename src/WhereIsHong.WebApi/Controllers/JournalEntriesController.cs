@@ -8,12 +8,6 @@ namespace WhereIsHong.WebApi.Controllers;
 [Route("[controller]")]
 public class JournalEntriesController(IMediator _mediator) : ControllerBase
 {
-    /// <summary>
-    /// Perform x + y
-    /// </summary>
-    /// <param name="x">Left hand operand of the arithmetic operation.</param>
-    /// <param name="y">Right hand operand of the arithmetic operation.</param>
-    /// <returns>Sum of x and y.</returns>
     [HttpGet]
     public async Task<IActionResult> GetJournalEntries()
     {

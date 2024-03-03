@@ -10,6 +10,7 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddWishClient(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddMemoryCache();
         services
             .AddOptions<WishClientOptions>()
             .BindConfiguration("WishClient")
